@@ -14,24 +14,159 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #393548;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: #f1f0f1;
+}
+
+.Left_side {
+  background-color: #393548;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f1f0f1;
+  width: 50%;
+}
+
+.Right_side {
+  background-color: #393548;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: #f1f0f1;
+  width: 50%;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #b8aae3;
 }
+
+.App-subText {
+  font-size: medium;
+  color: #d0cfd3;
+}
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  width: 70%;
+  max-width: 600px;
+  /* Optional, adjust based on your layout */
+  margin: 0 auto;
+  /* Center the form */
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  /* Add space between rows */
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  color: #d0cfd3;
+  content: false;
+  background-color: transparent;
+  background-color: #4c475f;
+}
+
+.passwordField {
+  flex: 1;
+  border-radius: 5px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputField::placeholder {
+  color: #d0cfd3;
+}
+
+.inputRow:focus-within {
+  border-color: #b8aae3;
+  border-width: 3px;
+}
+
+.inputField:focus+.inputRow {
+  border-color: #3498db;
+  /* Optional: Add a specific style for fallback */
+  border-width: 3px;
+}
+
+.inputFull {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.showPassword {
+  padding: 10px;
+  margin-left: 10px;
+  /* Space between input and button */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
