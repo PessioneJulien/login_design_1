@@ -31,11 +31,12 @@ function App() {
         </div>
         <div className="Right_side">
           <div className="login_form">
-            <h1 style={{ fontWeight: "600" }}>Create an account</h1>
+            <h1 style={{ fontWeight: "600", marginBottom: 5, fontSize: 50 }}>Create an account</h1>
             <text className="App-subText">Already have an account? <a href="/" className='App-link'>Login</a></text>
             <form className='form'>
               <div className='inputRow'>
                 <input type="text" placeholder="First Name" className='inputField' />
+                <span style={{ width: 10 }} />
                 <input type="text" placeholder="Last Name" className='inputField' />
               </div>
               <div className='inputRow'>
@@ -43,13 +44,33 @@ function App() {
               </div>
               <div className='inputRow'>
                 <div className='passwordField'>
-                  <input type="password" placeholder="Password" className='inputField' />
+                  <input type="password" placeholder="Enter your password" className='inputField' />
                   {showPassword ? (
                     <FontAwesomeIcon icon={faEye} className='icon' onClick={() => setShowPassword(!showPassword)} />
                   ) : (
                     <FontAwesomeIcon icon={faEyeSlash} className='icon' onClick={() => setShowPassword(!showPassword)} />
                   )}
                 </div>
+              </div>
+              <div className="checkboxField">
+                <input type="checkbox" id="terms" />
+                <label htmlFor="terms" className='terms'>I agree to the <a href="/">Terms & Conditions</a></label>
+              </div>
+              <button className="submitButton">Create account</button>
+              <div className="divider">
+                <div className='line' />
+                <span style={{ marginRight: 5, marginLeft: 5, fontSize: 16 }}>Or register with</span>
+                <div className='line' />
+              </div>
+              <div className="socialButtons">
+                <button className="googleButton">
+                  <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" className='socialIcon' />
+                  Google
+                </button>
+                <button className="appleButton">
+                  <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/mac-os.png" alt="mac-os" className='socialIcon' />
+                  Apple
+                </button>
               </div>
             </form>
           </div>
