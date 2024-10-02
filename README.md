@@ -24,10 +24,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">Login page 1</h3>
 <p> inpired by <a href="https://dribbble.com/shots/24552589-Login-Sign-up-Dark-Mode-UI-UX-Design">Dribbble design</a></p>
 </div>
